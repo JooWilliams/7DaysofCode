@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Cadastro de Pessoas-->
+    <section id="wrapper-form">
+        <fieldset class="bordasForm">
+            <legend class="titForm">Cadastro de Pessoas</legend>
+            <form class="form">
+                <label for="name">
+                    Nome
+                    <input class="form-field" id="name" maxlength="120" name="name" required type="text" required
+                        placeholder="Digite o nome da pessoa aqui">
+                </label>
+                <label for="birth-date">
+                    Data de Nascimento
+                    <input class="form-field js-field" id="birth-date" name="birth-date" required type="date" required>
+                </label>
+                <button type="submit" class="btFormSalvar">Salvar</button>
+            </form>
+        </fieldset>
+    </section>
+
+    <section id="result">
+        <table>
+            <tr class="titNomeAniversario">
+                <th>Nome</th>
+                <th>Data de aniversário</th>
+            </tr>
+        </table>
+    </section>
+    <section class="pop-up">
+        <h2>Tem certeza de que deseja remover este item?</h2>
+        <p>
+            <input type="button" id="yes" value="Sim" onclick="removeRow()">
+            <input type="button" id="no" value="Não" onclick="cancelAction()">
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
